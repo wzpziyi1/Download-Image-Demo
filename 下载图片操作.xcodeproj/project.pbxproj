@@ -15,6 +15,9 @@
 		09AEF0D51BE85F5600352C13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09AEF0D31BE85F5600352C13 /* LaunchScreen.storyboard */; };
 		09AEF0E01BE85F5600352C13 /* ______Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AEF0DF1BE85F5600352C13 /* ______Tests.swift */; };
 		09AEF0EB1BE85F5600352C13 /* ______UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AEF0EA1BE85F5600352C13 /* ______UITests.swift */; };
+		09AEF0F91BE8616F00352C13 /* apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09AEF0F81BE8616F00352C13 /* apps.plist */; };
+		09AEF1001BE861D200352C13 /* ZYApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AEF0FF1BE861D200352C13 /* ZYApp.swift */; };
+		09AEF1031BE8938200352C13 /* ZYDownloadImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AEF1021BE8938200352C13 /* ZYDownloadImageOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		09AEF0E61BE85F5600352C13 /* 下载图片操作UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "下载图片操作UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09AEF0EA1BE85F5600352C13 /* ______UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "______UITests.swift"; sourceTree = "<group>"; };
 		09AEF0EC1BE85F5600352C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09AEF0F81BE8616F00352C13 /* apps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apps.plist; sourceTree = "<group>"; };
+		09AEF0FF1BE861D200352C13 /* ZYApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYApp.swift; sourceTree = "<group>"; };
+		09AEF1021BE8938200352C13 /* ZYDownloadImageOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYDownloadImageOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +105,10 @@
 		09AEF0C61BE85F5600352C13 /* 下载图片操作 */ = {
 			isa = PBXGroup;
 			children = (
-				09AEF0C71BE85F5600352C13 /* AppDelegate.swift */,
-				09AEF0C91BE85F5600352C13 /* ViewController.swift */,
-				09AEF0CB1BE85F5600352C13 /* Main.storyboard */,
+				09AEF0FA1BE8617900352C13 /* Class */,
 				09AEF0D11BE85F5600352C13 /* Assets.xcassets */,
 				09AEF0D31BE85F5600352C13 /* LaunchScreen.storyboard */,
+				09AEF0F81BE8616F00352C13 /* apps.plist */,
 				09AEF0D61BE85F5600352C13 /* Info.plist */,
 				09AEF0CE1BE85F5600352C13 /* ______.xcdatamodeld */,
 			);
@@ -126,6 +131,58 @@
 				09AEF0EC1BE85F5600352C13 /* Info.plist */,
 			);
 			path = "下载图片操作UITests";
+			sourceTree = "<group>";
+		};
+		09AEF0FA1BE8617900352C13 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				09AEF1011BE8935700352C13 /* Tool */,
+				09AEF0FE1BE861B300352C13 /* Other */,
+				09AEF0FD1BE861A700352C13 /* Model */,
+				09AEF0FC1BE861A000352C13 /* View */,
+				09AEF0FB1BE8618800352C13 /* ViewController */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		09AEF0FB1BE8618800352C13 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				09AEF0C91BE85F5600352C13 /* ViewController.swift */,
+				09AEF0CB1BE85F5600352C13 /* Main.storyboard */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		09AEF0FC1BE861A000352C13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		09AEF0FD1BE861A700352C13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09AEF0FF1BE861D200352C13 /* ZYApp.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		09AEF0FE1BE861B300352C13 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				09AEF0C71BE85F5600352C13 /* AppDelegate.swift */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		09AEF1011BE8935700352C13 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				09AEF1021BE8938200352C13 /* ZYDownloadImageOperation.swift */,
+			);
+			name = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +247,7 @@
 		09AEF0BC1BE85F5600352C13 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZY;
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "王志盼";
@@ -232,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09AEF0F91BE8616F00352C13 /* apps.plist in Resources */,
 				09AEF0D51BE85F5600352C13 /* LaunchScreen.storyboard in Resources */,
 				09AEF0D21BE85F5600352C13 /* Assets.xcassets in Resources */,
 				09AEF0CD1BE85F5600352C13 /* Main.storyboard in Resources */,
@@ -260,7 +319,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				09AEF0D01BE85F5600352C13 /* ______.xcdatamodeld in Sources */,
+				09AEF1031BE8938200352C13 /* ZYDownloadImageOperation.swift in Sources */,
 				09AEF0CA1BE85F5600352C13 /* ViewController.swift in Sources */,
+				09AEF1001BE861D200352C13 /* ZYApp.swift in Sources */,
 				09AEF0C81BE85F5600352C13 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
